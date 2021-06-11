@@ -8,14 +8,7 @@
     <title>Utilisateurs</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="users.php">Utilisateurs</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php require_once 'templates/header.html' ?>
     <main>
         <h1>Accueil</h1>
     </main>

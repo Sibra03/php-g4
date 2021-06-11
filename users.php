@@ -25,14 +25,7 @@ $users = [
     <title>Utilisateurs</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="users.php">Utilisateurs</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php require_once 'templates/header.html' ?>
     <main>
         <h1>Liste des utilisateurs</h1>
         <table>

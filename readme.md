@@ -1,43 +1,18 @@
-# PHP
+# W14 - PHP procédurale
 
-## Le markdown
+## Comment récuprérer ce projet
+### Paquets à installer sur la VM
+- apache2
+- php7.0
+- libapache2-mod-php7.0
 
-Ceci est un exemple de fichier markdown.  
-Et la, je saute une ligne !
-
->Mettre en avant des lignes ou des paragraphe.  
->Et ici aussi !
->
->Et la, un saut de ligne !
-
-Une liste : 
-1. Quelque chose
-    - Oh, une sous liste 
-    - Avec des trucs !
-        - Et encore
-2. Autre chose
-3. Et encore
-
-Si vous voulez mettre un __*mot*__ en avant !
-
-Pour aller sur goggle, cliquez [ici](www.youtube.fr) !
-
-### Tableau
-| Tables        | Are           | Cool  |
-|-------------- |:-------------:|------:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-### Code
-
+### Récupérer le repo
 ```bash
 git clone https://github.com/jperaudon/php-g4.git .
 ```
 
-```php
-foreach ($users as $urer) {
-    // blabla
-}
-```
+
+## Exo
+### Exo 1 : les formulaires
+- Créer une page de d'inscription dans laquelle vous rentrez : nom, age, genre, mot de passe.
+- Chercher comment récupérer ses informations dans la page suivante.
