@@ -6,6 +6,12 @@
 - php7.0
 - libapache2-mod-php7.0
 
+### Activer l'affichage des erreurs PHP
+```bash
+sudo nano /etc/php/7.0/apache2/php.ini
+```
+Pour faire une recherche (ctrl + w avec nano) et chercher ```display_errors```. Le premier résultat n'est pas celui qu'on cherche, mais le suivant, oui. Changer les 'Off' en 'On'.
+
 ### Récupérer le repo
 ```bash
 git clone https://github.com/jperaudon/php-g4.git .
