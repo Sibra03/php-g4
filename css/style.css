@@ -41,8 +41,6 @@ nav a, nav li>span {
     text-align: center;
 }
 
-
-
 nav a:hover {
     color: black;
     background-color: #eac48b;
@@ -52,4 +50,12 @@ nav li {
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.form-group {
+    margin: 10px 0;
 }
