@@ -1,5 +1,4 @@
 <?php
 
-var_dump($_POST['age']);
+var_dump($_POST['name']);
 
-?>

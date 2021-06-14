@@ -8,11 +8,10 @@
     <title>Connexion</title>
 </head>
 <body>
-    <?php require_once './templates/header.html' ?>
+    <?php require_once './templates/header.php' ?>
     <main>
-
         <h1>Se connecter</h1>
-        <form action="" method="POST">
+        <form action="controllers/login.php" method="POST">
             <div class="form-group">
                 <label for="name">Login</label>
                 <input type="text" class="form-control" placeholder="Nom" name="name" value="Jon">

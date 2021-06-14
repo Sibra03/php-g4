@@ -11,7 +11,6 @@ $users = [
         'name' => 'Martin', 
         'age' => 12,
     ],
-    
 ];
 ?>
 
@@ -25,7 +24,7 @@ $users = [
     <title>Utilisateurs</title>
 </head>
 <body>
-    <?php require_once 'templates/header.html' ?>
+    <?php require_once 'templates/header.php' ?>
     <main>
         <h1>Liste des utilisateurs</h1>
         <table>

@@ -8,9 +8,8 @@
     <title>Inscription</title>
 </head>
 <body>
-    <?php require_once './templates/header.html' ?>
+    <?php require_once './templates/header.php' ?>
     <main>
-
         <h1>Inscrivez-vous !</h1>
         <form action="" method="POST">
             <div class="form-group">

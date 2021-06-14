@@ -8,9 +8,14 @@
     <title>Utilisateurs</title>
 </head>
 <body>
-    <?php require_once 'templates/header.html' ?>
+    <?php require_once 'templates/header.php' ?>
     <main>
         <h1>Accueil</h1>
+        <?php
+            session_start();
+  
+
+        ?>
     </main>
 </body>
 </html>
