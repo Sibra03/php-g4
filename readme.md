@@ -33,3 +33,12 @@ Mettre en place un bouton de deconnexion (tips : <a>) qui ne s'affiche (dans le 
     - plus de bouton connecté
     - un "bonton" : ```Bonjour [Jon]```
     
+### Exo 3 : bon login
+Déterminer un login et un mot de passe spécifique, et rendre la connexion uniquement valide si ces derniers sont rentré.
+
+### Exo 4 : utilisateur multiple
+- Créer une fausse base de données dans laquelle on retrouvera plusieurs utlisateurs (avec chacun login + mdp).
+- A la connexion, on vérifie si ce qu'on a rentrer correspond à l'un d'entre eux, pour le connecter.
+
+### Exo annexe :
+- Trouver comment afficher le nom d'utilisateur avec une majuscule.

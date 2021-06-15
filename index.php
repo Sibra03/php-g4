@@ -11,11 +11,7 @@
     <?php require_once 'templates/header.php' ?>
     <main>
         <h1>Accueil</h1>
-        <?php
-            session_start();
-  
-
-        ?>
+        
     </main>
 </body>
 </html>

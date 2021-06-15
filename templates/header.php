@@ -1,14 +1,16 @@
-
-
+<?php session_start() ?>
 <header>
     <nav id="navbar">
         <ul>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="users.php">Utilisateurs</a></li>
             <li><a href="inscription.php">Inscription</a></li>
-            <li><a href="connection.php">Connexion</a></li>
-            <li><a href="">Déco</a></li>
-
-        </ul>
+            <?php if (isset($_SESSION['pseudo'])): ?>
+                <li>Bonjour, <?= $_SESSION['pseudo'] ?> !</li>
+                <li><a href="controllers/logout.php">Déconnexion</a></li>
+            <?php else: ?>
+                <li><a href="connection.php">Connexion</a></li>
+            <?php endif ?>
+       </ul>
     </nav>
 </header>
