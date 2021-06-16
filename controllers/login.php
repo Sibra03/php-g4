@@ -24,6 +24,7 @@ $password = '1234';
 
 if ($_POST['name'] == $username && $_POST['password'] == $password) {
     $_SESSION['pseudo'] = $_POST['name']; // Logique : l'utilisateur est connecté !
+    $_SESSION['isConnected'] = true;
     header('Location: /');
     exit();
 } else {
@@ -31,3 +32,20 @@ if ($_POST['name'] == $username && $_POST['password'] == $password) {
     exit();
 }
 
+
+foreach ($users as $user) {
+    //var_dump($_POST); die;
+    //echo $user["name_id"];
+    //echo $user["password"];
+    $_SESSION["pseudo"] = $_POST["name_id"];
+    header("Location: / ");
+    exit();
+}
+    
+if($_POST["name_id"] != $user["name_id"] && $_POST["password"] != $user["password"]) {
+    header("Location: /connexion.php");
+    exit(); 
+} else {
+    header("Location: /connexion.php");
+    exit(); 
+} ; 

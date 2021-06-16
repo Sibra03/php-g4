@@ -40,5 +40,11 @@ Déterminer un login et un mot de passe spécifique, et rendre la connexion uniq
 - Créer une fausse base de données dans laquelle on retrouvera plusieurs utlisateurs (avec chacun login + mdp).
 - A la connexion, on vérifie si ce qu'on a rentrer correspond à l'un d'entre eux, pour le connecter.
 
+
+### Exo 5 : page privée
+- Créer un nouvelle page avec, par exemple, une image dedans.
+- Faire en sorte que le contenu de cette page de soit accessible que si l'utilisateur est connecté.
+
+
 ### Exo annexe :
 - Trouver comment afficher le nom d'utilisateur avec une majuscule.
