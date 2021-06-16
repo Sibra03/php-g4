@@ -14,7 +14,11 @@
         <form action="controllers/login.php" method="POST">
             <div class="form-group">
                 <label for="name">Login</label>
-                <input type="text" class="form-control" placeholder="Nom" name="name" value="Jon">
+                <input type="text" class="form-control" placeholder="Nom" name="name" value="jon">
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" name="password" value="1234">
             </div>
             <button type="submit" class="btn btn-primary">Se connecter</button>
         </form>
