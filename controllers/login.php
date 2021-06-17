@@ -9,7 +9,7 @@ session_start();
 $users = [
     [
         'name' => 'jon',
-        'password' => '1234'
+        'password' => '1234',
     ],
     [
         'name' => 'jane',
@@ -23,7 +23,7 @@ $users = [
 
 foreach ($users as $user) {
     if ($_POST['name'] == $user['name'] && $_POST['password'] == $user['password']) {
-        $_SESSION['pseudo'] = $_POST['name'];   // Logique : nom de session de l'utilisateur
+        $_SESSION['pseudo'] = ucfirst($_POST['name']);   // Logique : nom de session de l'utilisateur
         $_SESSION['isConnected'] = true;        // Logique : l'utilisateur est connecté !
         header('Location: /');
         exit();

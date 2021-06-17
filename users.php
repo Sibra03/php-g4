@@ -25,22 +25,26 @@ $users = [
 </head>
 <body>
     <?php require_once 'templates/header.php' ?>
-    <main>
-        <h1>Liste des utilisateurs</h1>
-        <table>
-            <tr>
-                <th>Nom</th>
-                <th>Couleur</th>
-                <th>Age</th>
-            </tr>
-            <?php foreach ($users as $user): ?>
+    <?php if (isset($_SESSION['isConnected'])): ?>
+        <main>
+            <h1>Liste des utilisateurs</h1>
+            <table>
                 <tr>
-                    <td><?= $user['name'] ?></td>
-                    <td><?= $user['color'] ?></td>
-                    <td><?= $user['age'] ?></td>
+                    <th>Nom</th>
+                    <th>Couleur</th>
+                    <th>Age</th>
                 </tr>
-            <?php endforeach ?>
-        </table>    
-    </main>
+                <?php foreach ($users as $user): ?>
+                    <tr>
+                        <td><?= $user['name'] ?></td>
+                        <td><?= $user['color'] ?></td>
+                        <td><?= $user['age'] ?></td>
+                    </tr>
+                <?php endforeach ?>
+            </table>    
+        </main>
+    <?php else: ?>
+        <?php require 'templates/private.php' ?>
+    <?php endif ?>
 </body>
 </html>
